@@ -1,5 +1,5 @@
 /**
- *puts -for printing
+ *puts: for printing
  *main
  *main(void) will be used
  */
@@ -7,7 +7,7 @@
 
 /**
  * making an executable file
- * main -Entry point
+ * main: Entry point
  * Return: 0 (success)
  */
 
