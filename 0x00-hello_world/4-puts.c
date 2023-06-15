@@ -1,5 +1,7 @@
 /**
- *making executable file
+ *puts -for printing
+ *main
+ *main(void) will be used
  */
 #include<stdio.h>
 
