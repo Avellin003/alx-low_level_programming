@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 /**
- * print:\"Programming is like building a multilingual puzzle
-*/
+ * main -Entry point
+ *
+ * retun: return always 0 (success
+ */
+
 
 int main (void)
 
