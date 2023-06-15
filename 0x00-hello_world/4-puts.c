@@ -1,13 +1,8 @@
-/**
- *puts: for printing
- *main
- *main(void) will be used
- */
 #include<stdio.h>
 
 /**
- * making an executable file
- * main: Entry point
+ * description - making my first programming
+ * function    - main
  * Return: 0 (success)
  */
 
