@@ -1,5 +1,5 @@
 /**
- * a-puts.c
+ *making executable file
  */
 #include<stdio.h>
 
