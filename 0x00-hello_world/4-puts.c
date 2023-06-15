@@ -1,5 +1,5 @@
 /**
- * 4-puts.c
+ * a-puts.c
  */
 #include<stdio.h>
 
