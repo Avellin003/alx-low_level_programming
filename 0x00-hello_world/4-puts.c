@@ -1,12 +1,9 @@
 #include<stdio.h>
 
 /**
- * description - making my first programming
- * 
  * function    - main
  * description - main will be used as function
- * 
- * Return: 0 (success)
+ *  Return: 0 (success)
  */
 
 
