@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * function    - main
+ *  main - starting point for program execution
  * description - main will be used as function
  *  Return: 0 (success)
  */
