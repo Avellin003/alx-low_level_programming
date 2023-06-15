@@ -1,3 +1,4 @@
+/*making a header*/
 #include <stdio.h>
 /*making an executable file*/
 int main (void)
