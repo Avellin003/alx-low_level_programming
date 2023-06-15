@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -Entry point
- *
- * retun: return always 0 (success
+ * making an executable file
  */
 
 
@@ -11,6 +9,5 @@ int main (void)
 
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	
-	retun (0);
+	return (0);
 }
