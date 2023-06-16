@@ -3,30 +3,30 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
+ * main - Entry point
  *
- *Return: Always 0 (Success/correct)
+ * Return: Always 0 (Success/correct)
  */
-int main(void);
-{	
-	int (n);
+int main(void)
+{
+	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
 	if (n == 0)
 	{
-		puts("%d is zero", n);
+		printf("%d is zero\n", n);
 	}
 
 	else if (n < 0)
 	{
-		puts("%d is negative", n);
+		printf("%d is negative\n", n);
 	}
 
 	else
 	{
-		puts("%d is positive", n);
+		printf("%d is positive\n", n);
 	}
 	return (0);
 }
