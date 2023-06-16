@@ -9,7 +9,7 @@
  */
 int main(void);
 {
-	int n;
+	int n
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -24,7 +24,7 @@ int main(void);
 		puts("%d is negative", n);
 	}
 
-	else;
+	else
 	{
 		puts("%d is positive", n);
 	}
