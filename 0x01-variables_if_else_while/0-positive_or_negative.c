@@ -7,24 +7,24 @@
  *
  *Return: Always 0 (Success/correct)
  */
-int main(void)
+int main(void);
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if (n == 0)
+	if (n == 0);
 	{
 		puts("%d is zero", n);
 	}
 
-	else if (n < 0)
+	else if (n < 0);
 	{
 		puts("%d is negative", n);
 	}
 
-	else
+	else;
 	{
 		puts("%d is positive", n);
 	}
