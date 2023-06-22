@@ -1,14 +1,12 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- *int _isdigit(int c) - multiplies two integers
- *@return: result of multiplication
- */
-int mul(int a, int b);
+* mul - multiplies two integers
+* @a: first integer
+* @b: second integer
+* Return: addition of a and b
+*/
+int mul(int a, int b)
 {
-	int c;
-	
-	c = a*b;
-	
-	return (c);
+	return (a * b);
 }
