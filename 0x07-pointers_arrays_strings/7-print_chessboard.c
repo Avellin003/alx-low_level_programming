@@ -5,7 +5,7 @@
 /**
  * print_chessboard - prints the chessboard
  * @a: two dimension array to print
- * _putchar - function used to print 
+ * _putchar - function used to print
  */
 void print_chessboard(char (*a)[8])
 {
