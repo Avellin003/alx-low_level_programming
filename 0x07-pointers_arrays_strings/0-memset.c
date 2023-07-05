@@ -6,7 +6,7 @@
  * @s: a pointer to n
  * @n: number of times to copy b
  * @b: value to be filled in the first bytes of n
- * retun: pointer to the memory area s
+ * Return: pointer to the memory area s
  */
 
 char *_memset(char *s, char b, unsigned int n)
