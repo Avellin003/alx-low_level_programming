@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - prints the min number of coins to make change
  * for an amount of money
  * @argc: argument count
- * @argv: argument vector
+ * @argv: arguments
  * Return: 0
  */
 int main(int argc, char **argv)
 {
-	int T, C;
+	int total, count;
 	unsigned int x;
 	char *p;
 	int cents[] = {25, 10, 5, 2};
@@ -20,24 +21,24 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	T = strtol(argv[1], &p, 10);
-	C = 0;
+	total = strtol(argv[1], &p, 10);
+	count = 0;
 
 	if (!*p)
 	{
-		while (T > 1)
+		while (total > 1)
 		{
 			for (x = 0; x < sizeof(cents[x]); x++)
 			{
-				if (cents[x] >= T)
+				if (total >= cents[x])
 				{
-					C += T / cents[x];
-					T = T % cents[x];
+					count += total / cents[x];
+					total = total % cents[x];
 				}
 			}
 		}
-		if (T == 1)
-			C++;
+		if (total == 1)
+			count++;
 	}
 	else
 	{
@@ -45,6 +46,6 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	printf("%d\n", C);
+	printf("%d\n", count);
 	return (0);
 }
