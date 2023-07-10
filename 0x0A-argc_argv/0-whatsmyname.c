@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- * create a program that prints
- * it's own name
+ * main - prints its name, followed by a new line.
+ * @Argc: argument count
+ * @Argv: arguments vector
+ * Return: 0
  */
 
 int main(int Argc, char *Argv[])
