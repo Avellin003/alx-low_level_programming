@@ -10,6 +10,6 @@ int main(int Argc, char *Argv[])
 {
 	(void) Argc;
 
-	printf("Argv : %s\n", Argv[0]);
+	printf("%s\n", Argv[0]);
 	return (0);
 }
