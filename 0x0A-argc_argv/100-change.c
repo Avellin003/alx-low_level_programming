@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - prints the min number of coins to make change
  * for an amount of money
@@ -10,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	int T,C;
+	int T, C;
 	unsigned int x;
 	char *p;
 	int cents[] = {25, 10, 5, 2};
@@ -30,7 +29,7 @@ int main(int argc, char **argv)
 		{
 			for (x = 0; x < sizeof(cents[x]); x++)
 			{
-				if (T >= cents[x])
+				if (cents[x] >= T)
 				{
 					C += T / cents[x];
 					T = T % cents[x];
