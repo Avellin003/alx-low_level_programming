@@ -3,13 +3,14 @@
 #include <stdlib.h>
 /**
  *init_dog - initializes function
- *@struct dog: varible
+ *@struct dog: variable
  *@name: variable
+ *@d: variable
  *@age: variable
  *@owner: variable
  *Return: void
  */
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void init_dog(dog *d, char *name, float age, char *owner)
 {
 	if (d)
 	{
