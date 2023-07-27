@@ -10,7 +10,8 @@ unsigned int _strlen(char *str)
 {
 	unsigned int a;
 
-	for (a = 0; str[a]; a++);
+	for (a = 0; str[a]; a++)
+		;
 	return (a);
 }
 
