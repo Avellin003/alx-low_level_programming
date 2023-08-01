@@ -3,7 +3,6 @@
   * add_nodeint - inserts node
   * @head: double pointer
   * @n: argument
-  * @other: counter
   * Return: void if success else return NULL
   */
 listint_t *add_nodeint(listint_t **head, const int n)
