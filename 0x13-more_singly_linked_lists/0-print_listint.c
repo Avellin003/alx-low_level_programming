@@ -6,7 +6,7 @@
  * print_listint - prints elements
  * @num: number of nodes
  * @h: pointer used access data in listint_t
- * Return: size_t
+ * Return: num
  */
 size_t print_listint(const listint_t *h)
 {
