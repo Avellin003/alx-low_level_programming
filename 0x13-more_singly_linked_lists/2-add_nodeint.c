@@ -5,20 +5,20 @@
   * add_nodeint - inserts node
   * @head: double pointer
   * @n: argument
-  * @x: counter
+  * @other: counter
   * Return: void if success else return NULL
   */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *x;
+	listint_t *other;
 
-	if (head == NULL)
+	other = malloc(sizeof(listint_t));
+	if (!other)
 		return (NULL);
-	x = malloc(sizeof(listint_t));
-	if (x == NULL)
-		return (NULL);
-	x->n = n;
-	x->next = *head;
-	*head = x;
-	return (x);
+
+	other->n = n;
+	other->next = *head;
+	*head = oher;
+
+	return (other);
 }
