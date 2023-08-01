@@ -3,7 +3,7 @@
 /**
  * print_listint - prints elements
  * @h: pointer used access data in listint_t
- * Return: x
+ * Return: the counter x
  */
 size_t print_listint(const listint_t *h)
 {
@@ -15,6 +15,5 @@ size_t print_listint(const listint_t *h)
 		x++;
 		h = h->next;
 	}
-
 	return (x);
 }
