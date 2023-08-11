@@ -6,6 +6,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#define elf_y e_type
+#define elf_z e_entry
 void assess_elf(unsigned char *e_ident);
 void magic(unsigned char *e_ident);
 void class(unsigned char *e_ident);
@@ -304,8 +306,8 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	version(h->e_ident);
 	osabi(h->e_ident);
 	abi(h->e_ident);
-	type(*h->e_ident, h->e_ident);
-	entry(*h->e_ident, h->e_ident);
+	type(h->elf_z, h->e_ident);
+	entry(h->elf_y, h->e_ident);
 
 	free(h);
 	elf(o);
