@@ -9,7 +9,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int avellin;
 
-	if (index > (sizeof(unsigned long int) * 7))
+	if (index > (sizeof(unsigned long int) * 8 - 1))
 		return (-1);
 	avellin = 1 << index;
 	*n = *n | avellin;
