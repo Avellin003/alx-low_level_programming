@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-/*
- * check_arg_num - checsk the num of args
+/**
+ * check_arg_num - function that checks for arg num
  * @argc: argument count
  * Return: nothing
  */
