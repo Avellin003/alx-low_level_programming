@@ -25,8 +25,8 @@ hash_node_t *create(const char *key, const char *value)
 		free(nd);
 		return (NULL);
 	}
-	nd->next == NULL;
-	return (node);
+	/*nd->next == NULL;*/
+	return (nd);
 }
 /**
  * hash_table_set - sets the key value of the table
