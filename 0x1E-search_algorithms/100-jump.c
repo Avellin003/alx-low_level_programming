@@ -1,38 +1,46 @@
 #include "search_algos.h"
 
 /**
- * jump_search - function that performs jump search algorithm
- * @array: pointer to the first elt of the array
- * @size: number of elts in the array
- * @value: is the searching value
- * Return: returns the index where the value is located or -1 if not found
+ * jump_search - searches for a value in an array of
+ * integers using the Jump search algorithm
+ * @arr: input array
+ * @arr_size: size of the array
+ * @target_value: value to search for
+ * Return: index of the number
  */
-int jump_search(int *array, size_t size, int value)
+int jump_search(int *arr, size_t arr_size, int target_value)
 {
-	size_t jump = sqrt((size - 1));
-	size_t counter = 0;
+	int current_index, jump, step, previous_index;
 
-	if (!array || size == 0)
+	if (arr == NULL || arr_size == 0)
 		return (-1);
 
-	while (counter < size)
+	jump = (int)sqrt((double)arr_size);
+	step = 0;
+	previous_index = current_index = 0;
+
+	do {
+		printf("Value checked arr[%d] = [%d]\n", current_index, arr[current_index]);
+
+		if (arr[current_index] == target_value)
+			return (current_index);
+		step++;
+		previous_index = current_index;
+		current_index = step * jump;
+	} while (current_index < (int)arr_size && arr[current_index] < target_value);
+
+	printf("Value found between indexes [%d] and [%d]\n",
+			previous_index, current_index);
+
+	for (; previous_index <= current_index &&
+			previous_index < (int)arr_size; previous_index++)
 	{
-		if (array[counter] == value)
-		{
-			return (counter);
-		}
-		else if (array[counter] < value)
-		{
-			printf("Value checked array[%ld] = [%d]\n", counter, array[counter]);
-			counter += jump;
-		}
-		else if (array[counter] > value)
-		{
-			printf("Value checked array[%ld] = [%d]\n", counter, array[counter]);
-			counter -= 1;
-		}
-		else
-			return (-1);
+		printf("Value checked arr[%d] = [%d]\n",
+				previous_index, arr[previous_index]);
+		if (arr[previous_index] == target_value)
+			return (previous_index);
 	}
+
 	return (-1);
 }
+
